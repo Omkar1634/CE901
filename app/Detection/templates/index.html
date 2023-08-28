@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pose Detection</title>
+</head>
+<body>
+    <h1>Upload a video</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/mp4">
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if video_uploaded %}
+    <p>Video uploaded successfully</p>
+    {% if detected_body_parts %}
+    <p>Detected body parts:</p>
+    <ul>
+        {% for body_part in detected_body_parts %}
+        <li>{{ body_part }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No body parts detected</p>
+    {% endif %}
+    {% endif %}
+
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
