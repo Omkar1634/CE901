@@ -1,5 +1,2 @@
-Clone the repository
-Run flutter pub get to install dependencies
-After that you run flutter run
-
-Run the app on an emulator or physical device
+First, clone the repository. Then use Flutter Pub to install dependencies.
+Finally, run the app on an emulator or physical device by executing a flutter run.
