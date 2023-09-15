@@ -14,3 +14,4 @@ This study investigates how well exercise can control the symptoms of Parkinson'
 2. Then use Flutter Pub to install dependencies.
 
 3. Finally, run the app on an emulator or physical device by executing a Flutter run.
+
